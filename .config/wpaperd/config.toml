@@ -1,0 +1,12 @@
+[default]
+duration = "30m"
+mode = "center"
+sorting = "random"
+path = "~/.config/wpaperd/random"
+#path = "~/.config/wpaperd/other/arch-chan.png"
+transition-time = 5000
+initial-transition = false
+queue-size = 3
+
+[any]
+group = 1

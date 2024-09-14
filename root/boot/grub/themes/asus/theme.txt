@@ -1,0 +1,44 @@
+# GRUB2 gfxmenu pop theme, based on Linux Vimix theme
+# Designed for any resolution
+
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+desktop-image-scale-method: "stretch"
+desktop-color: "#000000"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Logo image
++ image {
+	left = 50%-100
+	top = 30%-100
+    file = "logo.png"
+}
+
+# Show the boot menu
++ boot_menu {
+  left = 50%-480
+  top = 40%
+  width = 960
+  height = 50%
+  item_color = "#FBFBFB"
+  selected_item_color = "#FBFBFB"
+  item_height = 64
+  item_spacing = 48
+  selected_item_pixmap_style = "select_*.png"
+}
+
+# Show a countdown message using the label component
++ label {
+  top = 82%
+  left = 35%
+  width = 30%
+  align = "center"
+  id = "__timeout__"
+  text = "Booting in %d seconds"
+  color = "#FBFBFB"
+}

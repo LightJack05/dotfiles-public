@@ -1,0 +1,31 @@
+window {
+	margin: 5px;
+    border-radius: 8px;
+    background-color: rgba(33,33,33,0.7);
+}
+
+#input {
+	margin: 10px;
+}
+
+#inner-box {
+	margin: 3px;
+}
+
+#outer-box {
+	margin: 3px;
+}
+
+#scroll {
+	margin: 3px;
+}
+
+#text {
+	margin: 3px;
+}
+
+#entry:selected {
+	background-color: rgba(40, 40, 200, 0.6);
+    color: #FFFFFF;
+    margin: 3px;
+}

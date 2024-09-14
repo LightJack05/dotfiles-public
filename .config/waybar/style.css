@@ -1,0 +1,171 @@
+* {
+	border: none;
+	min-height: 0;
+	font-family: Material Design Icons, Roboto;
+	font-weight: bold;
+	font-size: 13px;
+	opacity: 1;
+}
+
+
+window#waybar {
+	background-color: transparent 
+		/*#181825*/
+	;
+}
+
+
+
+/* Each module */
+#battery,
+#clock,
+#cpu,
+#custom-keyboard-layout,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#backlight,
+#temperature,
+#tray,
+#custom-swaync,
+#custom-logo,
+#power-profiles-daemon,
+#bluetooth,
+#workspaces,
+#workspaces button,
+#submap,
+#hyprland-window {
+	all: initial;
+	border-radius: 8px;
+	margin: 1px 1px;
+	padding: 2px 9px;
+	color: #DDDDDD;
+	font-family: Material Design Icons, Roboto;
+	font-weight: bold;
+	background-color: rgba(43,43,43,0.8);
+    font-size: 13px;
+}
+
+
+
+#workspaces {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+
+#workspaces button {
+	animation-name: switchFrom;
+	animation-duration: 0.1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+
+#workspaces button.active {
+	animation-name: switchTo;
+	animation-duration: 0.1s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+
+#workspaces button:hover {
+	color: #000000;
+	background-color: #BBBBBB;
+}
+
+#workspaces button.urgent {
+	background-color: #f38ba8;
+}
+
+@keyframes switchFrom {
+	to {
+		min-width: 3px;
+		padding: 1px 6px;
+		color: #DDDDDD;
+	}
+}
+
+@keyframes switchTo {
+	to {
+		background-color: #1985D6;
+		color: #1e1e2e;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+
+
+#backlight {
+	padding-right: 15px;
+}
+
+#custom-swaync {
+	font-size: 15px;
+	padding: 1px 18px 1px 15px;
+}
+
+/* Copied */
+#power-profiles-daemon {
+	padding-right: 18px;
+}
+
+@keyframes blink {
+	to {
+		background-color: #29185D;
+		color: #181825;
+	}
+}
+
+#battery.warning {
+	background-color: #ED8500;
+	color: #181825;
+}
+
+#battery.critical,
+#battery.urgent {
+	color: #181825;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#battery.charging {
+	background-color: #a6da95;
+	animation-name: none;
+	color: #1e1e2e;
+}
+
+
+/* Submaps */
+
+#submap {
+	font-size: 14px;
+}
+
+#submap.NORMAL {
+	color: #39A5F6;
+}
+
+#submap.OP-PENDING {
+	color: #FF0000
+}
+
+#submap.RESIZE {
+	color: #10FF18;
+}
+
+#submap.MOVE {
+	color: #0FC7FF;
+}
+
+#submap.WORKSPACE {
+	color: #FF1A6F;
+}
