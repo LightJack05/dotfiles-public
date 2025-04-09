@@ -14,10 +14,10 @@ vim.keymap.set("n", "<leader>wq", function() vim.cmd(":wq") end)
 
 -- Resizing of windows
 
-vim.keymap.set("n", "<C-k>", function() vim.cmd(":res +3") end)
-vim.keymap.set("n", "<C-j>", function() vim.cmd(":res -3") end)
-vim.keymap.set("n", "<C-l>", function() vim.cmd(":vertical res +3") end)
-vim.keymap.set("n", "<C-h>", function() vim.cmd(":vertical res -3") end)
+vim.keymap.set("n", "<M-k>", function() vim.cmd(":res +3") end)
+vim.keymap.set("n", "<M-j>", function() vim.cmd(":res -3") end)
+vim.keymap.set("n", "<M-l>", function() vim.cmd(":vertical res +3") end)
+vim.keymap.set("n", "<M-h>", function() vim.cmd(":vertical res -3") end)
 
 vim.keymap.set("n", "<leader><Down>", function() vim.cmd(":wincmd j") end)
 vim.keymap.set("n", "<leader><Up>", function() vim.cmd(":wincmd k") end)
@@ -31,5 +31,4 @@ vim.keymap.set("n", "<leader>h", function() vim.cmd(":wincmd h") end)
 vim.keymap.set("n", "<leader>l", function() vim.cmd(":wincmd l") end)
 
 vim.keymap.set("n", "<leader>bd", function() vim.cmd(":bd") end)
-
 

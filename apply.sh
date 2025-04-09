@@ -24,3 +24,5 @@ sudo systemctl start bluetooth.service
 sudo systemctl start cups.service
 
 sudo cp -rv ./root/* /
+
+gsettings set org.gnome.mutter.wayland xwayland-grab-access-rules "['VirtualBox Machine']"

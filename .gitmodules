@@ -1,0 +1,4 @@
+[submodule ".config/hypr/hyprland-device-config"]
+	path = .config/hypr/hyprland-device-config
+	url = https://github.com/LightJack05/hyprland-device-config
+	ignore = all

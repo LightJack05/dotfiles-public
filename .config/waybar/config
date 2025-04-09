@@ -28,8 +28,8 @@
     "modules-right": [
         "tray",
     	"pulseaudio",
-	"backlight",
 	"bluetooth",
+	"backlight",
 	"power-profiles-daemon",
         "battery",
         "clock#date",
