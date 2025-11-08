@@ -15,3 +15,8 @@ Everything! This repo is MIT licensed (as far as I am premitted to license it, o
 ## I have a problem with this repo (Copyright, Licensing, etc.)
 Sorry to hear that. I'm sure we'll find a solution to it, just hit me up on Discord or open an issue.
 I am perfectly happy to remove anything from this repo if it causes inconvenience for others.
+
+## How does it look?
+Like this:
+
+<img width="2558" height="1441" alt="image" src="https://github.com/user-attachments/assets/e5c24845-6530-402f-a721-59f0c1d78ead" />
