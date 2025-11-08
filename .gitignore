@@ -1,4 +1,8 @@
+.config/blender
 .config/nvim/plugin
+.config/pdfarranger
+.config/nvim/lazy-lock.json
+.config/hypr/hyprland-device-config
 .config/onedrive
 .local/share/icons
 .config/hypr/display.conf
@@ -33,3 +37,15 @@ xsettingsd/
 .config/mimeapps.list
 .config/pavucontrol.ini
 .config/wireshark/
+.config/helm
+.config/gtk-3.0/bookmarks
+.config/Meltytech
+.config/Pinta
+.config/Thunar
+.config/obs-studio
+.config/vifm
+.config/xfce4
+.ssh/*id*
+.config/totem/*
+.config/Raspberry Pi/*
+.local/share/applications

@@ -12,7 +12,7 @@
 [push]
 	autoSetupRemote = true
 [pull]
-	rebase = false
+	rebase = true
 [alias]
     lg = lg1
     lg1 = lg1-specific --all

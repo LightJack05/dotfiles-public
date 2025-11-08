@@ -22,6 +22,7 @@ sudo systemctl start libvirtd.service
 sudo systemctl start avahi-daemon
 sudo systemctl start bluetooth.service
 sudo systemctl start cups.service
+sudo systemctl disable getty@.service
 
 sudo cp -rv ./root/* /
 

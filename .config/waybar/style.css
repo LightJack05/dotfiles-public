@@ -7,14 +7,9 @@
 	opacity: 1;
 }
 
-
 window#waybar {
-	background-color: transparent 
-		/*#181825*/
-	;
+	background-color: transparent; /* Optional: use #1e1e2e for solid */
 }
-
-
 
 /* Each module */
 #battery,
@@ -37,31 +32,34 @@ window#waybar {
 #submap,
 #hyprland-window {
 	all: initial;
-	border-radius: 8px;
+	border-radius:17px;
 	margin: 1px 1px;
-	padding: 2px 9px;
-	color: #DDDDDD;
+	padding: 2px 12px;
+	color: #cdd6f4; /* text */
 	font-family: Material Design Icons, Roboto;
 	font-weight: bold;
-	background-color: rgba(43,43,43,0.8);
-    font-size: 13px;
+	background-color: rgba(10,10,10, 0.8); /* surface0 with transparency */
+	font-size: 12px;
+    border: 1.5px solid rgba(60,60,60,0.8);
 }
-
-
 
 #workspaces {
-	padding-left: 1px;
-	padding-right: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
-
 #workspaces button {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 	animation-name: switchFrom;
 	animation-duration: 0.1s;
 	animation-timing-function: linear;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	animation-direction: alternate;
+	min-width: 14px;
+    border: none;
 }
 
 #workspaces button.active {
@@ -74,32 +72,30 @@ window#waybar {
 }
 
 #workspaces button:hover {
-	color: #000000;
-	background-color: #BBBBBB;
+	color: #89b4fa; /* base */
+	background-color: rgba(50,50,50,1); /* subtext1 */
 }
 
 #workspaces button.urgent {
-	background-color: #f38ba8;
+	background-color: #f38ba8; /* red */
 }
 
 @keyframes switchFrom {
 	to {
-		min-width: 3px;
-		padding: 1px 6px;
-		color: #DDDDDD;
+        padding-top: 5px;
+	    background-color: transparent; /* surface0 with transparency */
 	}
 }
 
 @keyframes switchTo {
 	to {
-		background-color: #1985D6;
-		color: #1e1e2e;
-		padding-left: 15px;
-		padding-right: 15px;
+        padding-top: 5px;
+		background-color: #89b4fa; /* blue */
+		color: #1e1e2e; /* base */
+		padding-left: 13px;
+		padding-right: 13px;
 	}
 }
-
-
 
 #backlight {
 	padding-right: 15px;
@@ -110,26 +106,25 @@ window#waybar {
 	padding: 1px 18px 1px 15px;
 }
 
-/* Copied */
 #power-profiles-daemon {
 	padding-right: 18px;
 }
 
 @keyframes blink {
 	to {
-		background-color: #29185D;
-		color: #181825;
+		background-color: #cba6f7; /* mauve */
+		color: #1e1e2e; /* base */
 	}
 }
 
 #battery.warning {
-	background-color: #ED8500;
-	color: #181825;
+	background-color: #fab387; /* peach */
+	color: #1e1e2e;
 }
 
 #battery.critical,
 #battery.urgent {
-	color: #181825;
+	color: #1e1e2e;
 	animation-name: blink;
 	animation-duration: 0.5s;
 	animation-timing-function: linear;
@@ -138,34 +133,33 @@ window#waybar {
 }
 
 #battery.charging {
-	background-color: #a6da95;
+	background-color: #a6e3a1; /* green */
 	animation-name: none;
 	color: #1e1e2e;
 }
 
-
 /* Submaps */
-
 #submap {
-	font-size: 14px;
+	font-size: 13px;
+    padding-top: 5px;
 }
 
 #submap.NORMAL {
-	color: #39A5F6;
+	color: #89b4fa; /* blue */
 }
 
 #submap.OP-PENDING {
-	color: #FF0000
+	color: #f38ba8; /* red */
 }
 
 #submap.RESIZE {
-	color: #10FF18;
+	color: #a6e3a1; /* green */
 }
 
 #submap.MOVE {
-	color: #0FC7FF;
+	color: #94e2d5; /* teal */
 }
 
 #submap.WORKSPACE {
-	color: #FF1A6F;
+	color: #f5c2e7; /* pink */
 }

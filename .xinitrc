@@ -1,1 +1,2 @@
-xhost local:root
+#!/bin/bash
+exec Hyprland

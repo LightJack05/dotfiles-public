@@ -1,7 +1,0 @@
-require("LightJack05.remap")
-require("LightJack05.packer")
-require("LightJack05.linenumbers")
-require("LightJack05.terminal")
-require("LightJack05.clipboard")
-require("LightJack05.general")
-require("LightJack05.indent")

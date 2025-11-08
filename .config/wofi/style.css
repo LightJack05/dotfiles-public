@@ -1,33 +1,37 @@
 * {
-    font: Roboto;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #cdd6f4; /* text */
+    background: transparent;
+    border-radius: 17px;
 }
 
 window {
-    border-radius: 8px;
+    background-color: rgba(32,32,32,0.7); /* base */
+    border: 2px solid rgba(100,100,100,0.8); /* surface0 */
+    padding: 10px;
 }
 
 #input {
-	margin: 10px;
+    margin: 10px;
+    padding: 6px 10px;
+    background-color: rgba(45,45,45,0.8); /* surface0 */
+    border: none;
+    color: #cdd6f4;
+    border: 1px solid rgba(50,50,50,0.8); /* surface0 */
 }
 
-#inner-box {
-	margin: 3px;
+#inner-box, #outer-box, #scroll, #text {
+    margin: 4px;
 }
 
-#outer-box {
-	margin: 3px;
-}
-
-#scroll {
-	margin: 3px;
-}
-
-#text {
-	margin: 3px;
+#entry {
+    padding: 6px;
+    margin: 4px;
 }
 
 #entry:selected {
-	background-color: rgba(40, 40, 200, 0.6);
-    color: #FFFFFF;
-    margin: 3px;
+    background-color: rgba(110, 110, 110, 0.25); /* Catppuccin Lavender (semi-transparent) */
+    color: #f5e0dc; /* rosewater */
+    border: 1px solid rgba(50,50,50,0.8); /* surface0 */
 }
