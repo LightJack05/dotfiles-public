@@ -27,14 +27,13 @@
     ],
     "modules-right": [
         "tray",
-    	"pulseaudio",
-	"bluetooth",
-	"backlight",
-	"power-profiles-daemon",
+        "pulseaudio",
+        "bluetooth",
+        "backlight",
+        "power-profiles-daemon",
         "battery",
-        "clock#date",
         "clock#time",
-	"custom/swaync"
+        "clock#date",
     ],
 
 
@@ -75,7 +74,7 @@
 
     "clock#date": {
       "interval": 10,
-      "format": "  {:%e %b %Y}", // Icon: calendar-alt
+      "format": "{:%Y-%m-%e}", // Icon: calendar-alt
       "tooltip-format": "{:%e %B %Y}"
     },
 
@@ -86,15 +85,6 @@
 	    "always-on": true,
 	    "default-submap": "NORMAL"
     },
-
-    "network": {
-        "interval": 5,
-        "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-        "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-        "format-disconnected": "⚠  Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}"
-    },
-
 
     "pulseaudio": {
         "scroll-step": 0.6,
@@ -153,20 +143,9 @@
     "bluetooth": {
 	    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
 	    "format": " {status}",
-	    "format-disabled": " {status}", // an empty format will hide the module
-	    "format-connected": " {num_connections} connected",
+	    "format-disabled": " off", // an empty format will hide the module
+	    "format-connected": " {num_connections}",
 	    "on-click": "blueman-manager"
-    },
-
-    "custom/logo": {
-        "format": "  ",
-        "tooltip": false,
-        "on-click": "nwg-drawer"
-    },
-    "custom/swaync":{
-	"format": "󰎟",
-	"tooltip": false,
-	"on-click": "swaync-client -t"
     },
     "power-profiles-daemon": {
 	    "format": "{icon}",

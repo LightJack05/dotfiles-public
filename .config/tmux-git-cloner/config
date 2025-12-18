@@ -1,0 +1,28 @@
+# tmux-git-cloner configuration file
+# 
+# Copy this file to ~/.config/tmux-git-cloner/config and customize as needed.
+#
+# CLONE_DIR: Directory where repositories will be cloned
+#
+# Remote configuration:
+# This tool uses gh (GitHub CLI) and tea (Gitea CLI) for authentication.
+# No tokens need to be configured here - use the respective CLI tools to authenticate:
+#   - GitHub: gh auth login
+#   - Gitea:  tea login add
+#
+# REMOTES: Space-separated list of remotes to query
+# Format: type:host:protocol
+# Protocol can be 'ssh' or 'https'
+# Examples:
+#   github:github.com:ssh
+#   github:github.mycompany.com:https  (GitHub Enterprise)
+#   gitea:gitea.example.com:ssh
+
+CLONE_DIR="${HOME}/source"
+
+# List of remotes to query (space-separated)
+# Format: type:host:protocol
+REMOTES="github:github.com:https gitea:gitea.lightjack.de:https"
+
+# Example with multiple remotes:
+# REMOTES="github:github.com:ssh github:github.company.com:https gitea:git.mydomain.com:ssh"

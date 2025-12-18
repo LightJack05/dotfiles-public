@@ -163,3 +163,9 @@ window#waybar {
 #submap.WORKSPACE {
 	color: #f5c2e7; /* pink */
 }
+
+#submap.CONFIG,
+#submap.CONFIG\/WALLPAPER,
+#submap.CONFIG\/WAYBAR {
+    color: red;
+}

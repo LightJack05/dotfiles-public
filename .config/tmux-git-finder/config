@@ -1,0 +1,14 @@
+# tmux-git-finder configuration file
+#
+# Copy this file to ~/.config/tmux-git-finder/config and customize as needed.
+
+# SEARCH_PATHS: Array of directories to search for git repositories
+# Use absolute paths or paths starting with $HOME
+# Example:
+#   SEARCH_PATHS=("$HOME/projects" "$HOME/work" "$HOME/repos")
+SEARCH_PATHS=("$HOME/source")
+
+# MAX_DEPTH: Maximum directory depth to search for git repositories
+# Higher values find more nested repos but take longer to search
+# Default: 3
+MAX_DEPTH=10
