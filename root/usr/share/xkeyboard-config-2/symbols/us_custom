@@ -1,0 +1,21 @@
+default partial alphanumeric_keys
+xkb_symbols "us_custom" {
+    include "us(altgr-intl)"
+
+    key <TLDE> { [ grave, asciitilde, dead_grave,    plusminus    ] };
+    key <AC02> { [          s,          S,  ssharp,    U1E9E        ] };
+    key <AB03> { [          c,          C,    cent,    copyright    ] };
+    key <AC38> { [ 	   a,          A, adiaeresis, Adiaeresis ] };
+
+    // Add German umlauts on AltGr (Level 3)
+    key <AC01> { [ a, A, adiaeresis, Adiaeresis ] }; // ä, Ä
+    key <AD09> { [ o, O, odiaeresis, Odiaeresis ] }; // ö, Ö
+    key <AD07> { [ u, U, udiaeresis, Udiaeresis ] }; // ü, Ü
+
+    key <AD03> { [ e, E, EuroSign, cent ] };
+
+    key <AD10> { [ p, P, section, degree ] };
+
+    include "level3(ralt_switch)"
+};
+

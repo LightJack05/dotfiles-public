@@ -1,0 +1,47 @@
+[daemonize]
+# log_to = "syslog" or /file/path
+log_to = "/var/log/illuminanced.log"
+pid_file = "/run/illuminanced.pid"
+# log_level = "OFF", "ERROR", "WARN", "INFO", "DEBUG", "TRACE"
+log_level = "ERROR"
+
+[general]
+check_period_in_seconds = 1
+light_steps = 100
+min_backlight = 20
+step_barrier = 0.1
+max_backlight_file = "/sys/class/backlight/amdgpu_bl1/max_brightness"
+backlight_file = "/sys/class/backlight/amdgpu_bl1/brightness"
+illuminance_file = "/sys/bus/iio/devices/iio:device0/in_illuminance_raw"
+event_device_mask = "/dev/input/event*"
+event_device_name = "AT Translated Set 2 keyboard"
+enable_max_brightness_mode = false
+filename_for_sensor_activation = ""
+switch_key_code = 226
+
+[kalman]
+q = 1
+r = 20
+covariance = 10
+
+[light]
+points_count = 6
+
+illuminance_0 = 0
+light_0 = 20
+
+illuminance_1 = 5
+light_1 = 40
+
+illuminance_2 = 10
+light_2 = 60
+
+illuminance_3 = 60
+light_3 = 80
+
+illuminance_4 = 200
+light_4 = 90
+
+illuminance_5 = 350
+light_5 = 100
+
