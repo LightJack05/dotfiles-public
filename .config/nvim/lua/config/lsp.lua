@@ -13,3 +13,11 @@ vim.lsp.config("yamlls", {
     },
   },
 })
+
+vim.lsp.config("nil", {
+  settings ={
+    formatting = {
+      command = { "/home/LightJack05/.local/share/nvim/mason/packages/nixpkgs-fmt/bin/nixpkgs-fmt" },
+    },
+  }
+})

@@ -56,5 +56,9 @@ require("mason-tool-installer").setup({
 
         -- Terraform
         "terraform-ls",
+
+        -- SQL
+        "sqls",
+        "postgres_lsp",
     },
 })

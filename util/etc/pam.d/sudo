@@ -1,0 +1,6 @@
+#%PAM-1.0
+auth       [success=1 default=ignore]  pam_succeed_if.so    service in sudo:su:su-l tty in :unknown
+auth      sufficient pam_fprintd.so
+auth		include		system-auth
+account		include		system-auth
+session		include		system-auth

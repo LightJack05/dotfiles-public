@@ -1,0 +1,22 @@
+# tmux-nix-finder configuration file
+#
+# Copy this file to ~/.config/tmux-nix-finder/config and customize as needed.
+
+# SEARCH_PATHS: Array of directories to search for shell.nix files
+# Use absolute paths or paths starting with $HOME
+# Example:
+#   SEARCH_PATHS=("$HOME/projects" "$HOME/work" "$HOME/nix-projects")
+SEARCH_PATHS=("$HOME/source" "$HOME/dotfiles/shells")
+
+# MAX_DEPTH: Maximum directory depth to search for shell.nix files
+# Higher values find more nested files but take longer to search
+# Default: 3
+MAX_DEPTH=10
+
+# NIX_SHELL_COMMAND: Optional command to run inside nix-shell
+# Leave empty to use default nix-shell behavior
+# Examples:
+#   NIX_SHELL_COMMAND="zsh"       # Start zsh in nix-shell
+#   NIX_SHELL_COMMAND="bash"      # Start bash in nix-shell
+#   NIX_SHELL_COMMAND=""          # Use nix-shell default (empty)
+NIX_SHELL_COMMAND="/usr/bin/zsh"

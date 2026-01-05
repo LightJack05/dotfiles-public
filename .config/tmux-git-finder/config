@@ -11,4 +11,4 @@ SEARCH_PATHS=("$HOME/source")
 # MAX_DEPTH: Maximum directory depth to search for git repositories
 # Higher values find more nested repos but take longer to search
 # Default: 3
-MAX_DEPTH=10
+MAX_DEPTH=5

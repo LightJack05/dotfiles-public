@@ -1,0 +1,7 @@
+[sie][Autogain#0]
+bypass=true
+maximumHistory=6
+target=-30
+
+[soe][Autogain#0]
+bypass=true
