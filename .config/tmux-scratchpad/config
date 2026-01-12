@@ -1,0 +1,11 @@
+# Example configuration file for tmux-scratchpad
+# Copy this file to ~/.config/tmux-scratchpad/config and customize as needed
+
+# Base directory for scratchpad folders
+# Default: $HOME/scratchpad
+SCRATCHPAD_BASE_PATH="$HOME/scratchpad"
+
+# Optional command to execute in the shell when creating a new session
+# Leave empty for default shell behavior
+# Examples: "zsh", "bash", "fish"
+SHELL_COMMAND=""

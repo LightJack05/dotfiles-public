@@ -10,3 +10,6 @@
 [submodule "bin/tmux-sessionizer"]
 	path = bin/tmux-sessionizer
 	url = https://github.com/LightJack05/tmux-sessionizer
+[submodule "bin/tmux-scratchpad"]
+	path = bin/tmux-scratchpad
+	url = https://github.com/LightJack05/tmux-scratchpad.git
