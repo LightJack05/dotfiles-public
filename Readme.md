@@ -6,7 +6,7 @@ Hey, this is a public mirror of my dotfiles repository. I keep my regular one pr
 First off: This is probably not something that you would want to install all in one part. It is the result of years of random messing around and continuous modification. I can deal with it, I'd rather you not have to put up with it. ;)
 This repo is mainly included for some inspiration in case you want to steal some parts of it. (Say my wofi CSS or my swaync config.)
 
-But in case you really want to: First clone this repo to `~/dotfiles` and then there is an `apply.sh` script in the root of this repo, that should apply (mostly) everything you would want. Make sure this doesn't overwrite anything, as it is intended to only be run on a freshly installed arch system, not something you are already actively using.
+But in case you really want to: First clone this repo to `~/dotfiles` and then there is an `setup-complete.sh` script in the root of this repo, that should apply (mostly) everything you would want. Make sure this doesn't overwrite anything, as it is intended to only be run on a freshly installed arch system, not something you are already actively using.
 That script also assumes there is some software on your machine, so maybe read through it and only execute the parts you want to apply.
 
 ## What of all of this can I use for myself?
@@ -19,4 +19,5 @@ I am perfectly happy to remove anything from this repo if it causes inconvenienc
 ## How does it look?
 Like this:
 
-<img width="2558" height="1441" alt="image" src="https://github.com/user-attachments/assets/e5c24845-6530-402f-a721-59f0c1d78ead" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1ef2fd67-1ca4-4574-a7f3-6b59229420eb" />
+
