@@ -3,22 +3,22 @@
     font-size: 18px;
     color: #cdd6f4; /* text */
     background: transparent;
-    border-radius: 17px;
+    border-radius: 7px;
 }
 
 window {
-    background-color: rgba(32,32,32,0.7); /* base */
-    border: 2px solid rgba(100,100,100,0.8); /* surface0 */
+    background-color: rgba(32,32,32,0.4); /* base */
+    border: 2px solid rgba(32,32,32,0.2); /* surface0 */
     padding: 10px;
 }
 
 #input {
     margin: 10px;
     padding: 6px 10px;
-    background-color: rgba(45,45,45,0.8); /* surface0 */
+    background-color: rgba(45,45,45,0.4); /* surface0 */
     border: none;
     color: #cdd6f4;
-    border: 1px solid rgba(50,50,50,0.8); /* surface0 */
+    border: 2px solid rgba(32,32,32,0.2); /* surface0 */
 }
 
 #inner-box, #outer-box, #scroll, #text {
@@ -31,7 +31,7 @@ window {
 }
 
 #entry:selected {
-    background-color: rgba(110, 110, 110, 0.25); /* Catppuccin Lavender (semi-transparent) */
+    background-color: rgba(64, 64, 64, 0.3); /* Catppuccin Lavender (semi-transparent) */
     color: #f5e0dc; /* rosewater */
-    border: 1px solid rgba(50,50,50,0.8); /* surface0 */
+    border: 2px solid rgba(32,32,32,0.2); /* surface0 */
 }

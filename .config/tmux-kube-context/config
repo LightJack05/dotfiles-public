@@ -1,0 +1,17 @@
+# tmux-kube-context configuration file
+#
+# Copy this file to ~/.config/tmux-kube-context/config and customize as needed.
+
+# STARTUP_HOOK: Optional command to run when creating a new tmux session
+# This command will be executed after setting the KUBECONFIG variable
+# Leave empty to just start a shell with KUBECONFIG set
+#
+# SECURITY NOTE: The startup hook command is executed as-is without sanitization.
+# Only use trusted commands and ensure this config file has proper permissions (e.g., chmod 600).
+#
+# Examples:
+#   STARTUP_HOOK="nix-shell"                    # Enter a nix-shell
+#   STARTUP_HOOK="exec zsh"                     # Start zsh
+#   STARTUP_HOOK="source ~/.profile && exec \$SHELL"  # Source profile and start shell
+#   STARTUP_HOOK=""                             # Use default behavior (start shell)
+STARTUP_HOOK="nix-shell -p talosctl kubernetes-helm kubectl kubeseal argocd calicoctl k9s curl jq yq-go kustomize fluxcd kubectx stern --run zsh"

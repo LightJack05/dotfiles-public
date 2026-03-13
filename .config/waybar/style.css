@@ -32,15 +32,15 @@ window#waybar {
 #submap,
 #hyprland-window {
 	all: initial;
-	border-radius:17px;
+	border-radius:7px;
 	margin: 1px 1px;
 	padding: 2px 12px;
-	color: #cdd6f4; /* text */
+	color: #eaeef9; /* text */
 	font-family: Material Design Icons, Roboto;
 	font-weight: bold;
-	background-color: rgba(10,10,10, 0.8); /* surface0 with transparency */
+    background-color: rgba(20,20,20,0.5); /* base */
 	font-size: 12px;
-    border: 1.5px solid rgba(60,60,60,0.8);
+    border: 0px solid rgba(60,60,60,0.8);
 }
 
 #workspaces {
@@ -90,8 +90,8 @@ window#waybar {
 @keyframes switchTo {
 	to {
         padding-top: 5px;
-		background-color: #89b4fa; /* blue */
-		color: #1e1e2e; /* base */
+		background-color: rgba(0, 150, 255, 0.3); /* blue */
+		color: #eaeef9; /* base */
 		padding-left: 13px;
 		padding-right: 13px;
 	}
