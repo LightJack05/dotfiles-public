@@ -19,12 +19,12 @@ return {
         end
     },
 
-    -- Treesitter
-    {
-        "nvim-treesitter/nvim-treesitter",
-        build = ":TSUpdate",
-        branch = "main"
-    },
+--    -- Treesitter
+--    {
+--        "nvim-treesitter/nvim-treesitter",
+--        build = ":TSUpdate",
+--        branch = "main"
+--    },
 
     -- Undotree
     { "mbbill/undotree" },

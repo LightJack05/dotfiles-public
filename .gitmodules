@@ -1,9 +1,6 @@
 [submodule "bin/tmux-nix-finder"]
 	path = bin/tmux-nix-finder
 	url = https://github.com/LightJack05/tmux-nix-finder
-[submodule "bin/tmux-git-cloner"]
-	path = bin/tmux-git-cloner
-	url = https://github.com/LightJack05/tmux-git-cloner
 [submodule "bin/tmux-git-finder"]
 	path = bin/tmux-git-finder
 	url = https://github.com/LightJack05/tmux-git-finder
@@ -13,3 +10,6 @@
 [submodule "bin/tmux-scratchpad"]
 	path = bin/tmux-scratchpad
 	url = https://github.com/LightJack05/tmux-scratchpad.git
+[submodule "bin/tmux-git-cloner"]
+	path = bin/tmux-git-cloner
+	url = https://github.com/LightJack05/tmux-git-cloner

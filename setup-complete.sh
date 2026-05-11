@@ -15,10 +15,5 @@ sudo cp -rv ./root/* /
 # Set up nvim with plugins
 nvim --headless "+Lazy! sync" +qa
 
-# Note that a regeneration of initramfs and grub config may be required after this step
-echo "Remember to regenerate initramfs and update grub config if necessary."
-
-gsettings set org.gnome.mutter.wayland xwayland-grab-access-rules "['VirtualBox Machine']" || true
-
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-nix-channel --update
+# enable the hyprpolkitagent
+systemctl --user enable --now hyprpolkitagent

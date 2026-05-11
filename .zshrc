@@ -2,4 +2,4 @@
 . ~/.config/zsh/aliases.sh
 . ~/.config/zsh/funk.sh
 . ~/.config/zsh/nix.sh
-. ~/.config/zsh/completions/*
+for _f in ~/.config/zsh/completions/*.sh; do . "$_f"; done; unset _f
