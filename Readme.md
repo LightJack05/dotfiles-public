@@ -1,5 +1,11 @@
 # My dotfiles
 
+> [!CAUTION]
+> Due to the recent unreliability of GitHub, development of this project has moved to my personal Gitea Instace.
+> 
+> [https://gitea.lightjack.de/LightJack05/dotfiles](https://gitea.lightjack.de/LightJack05/dotfiles)
+
+
 Hey, this is a public mirror of my dotfiles repository. I keep my regular one private since I might be an idiot and push stuff there accidentally. This mirror will be updated every once in a while when I make major changes to my private repo.
 
 ## How to install this
